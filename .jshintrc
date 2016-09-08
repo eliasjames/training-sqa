@@ -95,5 +95,9 @@
     "smarttabs"     : false,    // Tolerate mixed tabs and spaces when the latter are used for alignmnent only.
     "shadow"        : false,    // Allows re-define variables later in code e.g. `var x=1; x=2;`.
     "supernew"      : false,    // Tolerate `new function () { ... ;` and `new Object;`.
-    "validthis"     : false     // Tolerate strict violations when the code is running in strict mode and you use this in a non-constructor function.
+    "validthis"     : false,     // Tolerate strict violations when the code is running in strict mode and you use this in a non-constructor function.
+    "browser"       : true, 
+    "predef"        : [
+      "module"
+    ]
 }
