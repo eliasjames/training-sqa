@@ -1,8 +1,9 @@
 describe('elevatorFSM', function () {
+  var elevatorFactory = require('../src/elevatorFSM.js');
+  var elevatorFSM = elevatorFactory();
+
   it('should start out waiting', function () {
-    var elevatorFactory = require('../src/elevatorFSM.js');
-    var elevatorInstance = elevatorFactory();
-    var testString = elevatorInstance.getCurrentStatus();
+    var testString = elevatorFSM.getMachineState();
 
     expect(testString).toEqual('WAITING');
   });

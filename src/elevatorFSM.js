@@ -4,9 +4,5 @@ module.exports = function () {
     'WAITING': {}
   });
 
-  return {
-    getCurrentStatus: function () {
-      return elevatorFSM.getMachineState();
-    }
-  }
+  return elevatorFSM;
 };
