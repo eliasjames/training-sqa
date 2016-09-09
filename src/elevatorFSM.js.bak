@@ -1,0 +1,19 @@
+// Compare this file, written without a test/freestyle, 
+// against elevatorFSM.js, written to pass a test
+module.exports = function () {
+  var Stately = require('stately.js');
+  var floorNumber = floorNumber || 0;
+  var elevatorFSM = Stately.machine({
+    'WAITING'       : {
+      'move'  : function () {
+        return this.MOVE_ONE_FLOOR;
+       }
+    },
+    'MOVE_ONE_FLOOR': {
+      'pass': 'MOVE_ONE_FLOOR',
+      'wait': 'WAITING'
+    }
+  });
+
+  return elevatorFSM;
+};
