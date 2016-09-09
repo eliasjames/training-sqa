@@ -7,4 +7,11 @@ describe('elevatorFSM', function () {
 
     expect(testString).toEqual('WAITING');
   });
+
+  it('should transition to another state', function () {
+    elevatorFSM.move(); 
+    var testString = elevatorFSM.getMachineState();
+
+    expect(testString).toEqual('MOVE_ONE_FLOOR');
+  });
 });
