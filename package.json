@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Courseware for Intro to Test Driven Development",
   "main": "gulpfile.js",
-  "dependencies": {},
+  "dependencies": {
+    "stately.js": "^1.3.0"
+  },
   "devDependencies": {
     "browserify": "^13.1.0",
     "gulp": "^3.9.1",

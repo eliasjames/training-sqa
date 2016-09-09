@@ -1,8 +1,12 @@
 module.exports = function () {
-  var currentStatus = 'hello world';
+  var Stately = require('stately.js');
+  var elevatorFSM = Stately.machine({
+    'WAITING': {}
+  });
+
   return {
-    currentStatus: function () {
-      return currentStatus;
+    getCurrentStatus: function () {
+      return elevatorFSM.getMachineState();
     }
   }
 };
