@@ -1,0 +1,123 @@
+Day One
+
+(Prerequisite)
+ - Students' machines should have node/npm installed.
+
+-----
+
+(Get started, 20 mins)
+ - Introductions & icebreakers
+ - Course guidelines & housekeeping
+ - Course material expectations
+ - Review outline
+
+(Lecture, 20 mins)
+Core Concepts
+Why test?
+ - Software Quality Assurance overview
+ - No one method can catch all bugs
+ - Tests one part of SQA: linting, code reviews, etc
+ - Non-bug benefits of testing
+ - Refactoring (SOLID, DRY)
+Definitions
+ - BDD/TDD Overview
+ - Unit Tests
+ - Integration Tests
+Tests in practice
+ - Tests have to get run often to be effective
+ - Tools have to work well
+ - Robustness
+ - Choosing what to test...
+ - and what not to
+ - When to test (dev/staging/prod)
+ - How to identify good tests
+
+(Code-along, 30 mins)
+Setup
+ - Brief review/intro to npm/package.json, if needed
+ - Install Karma, Jasmine, Grunt, jshint
+ - Set up Grunt to run jshint
+Jasmine 
+ - Structure and Syntax
+ - Suites & Specs
+ - Matchers
+ - Hello World failing test
+ - Write Hello World code to make test pass
+
+(break)
+
+(Discussion, 20 mins)
+ - Review the use cases/features for our demo code
+ - Outline a general plan for how to implement 
+
+(Code-along, 60 mins)
+ - Do TDD! Write tests then write code
+ - Vanilla JS at this point
+
+(lunch)
+
+(Code-along, 60 mins)
+ - Set up Karma 
+ - Add Backbone
+ - Split spec into multiple files
+ - Set up Karma to test multiple browsers
+ - E2E versus units with Backbone
+
+(break)
+
+(Lecture, 20 mins)
+Advanced Jasmine: tools 
+ - Stunt Doubles: Stubs, Spies, Mocks
+ - Testing Asynchronous/Promises/Deferred Logic
+ - Review other assertion libraries: mocha, chai, sinon
+ - Mocking HTTP calls with Sinon
+Advanced Jasmine: techniques
+ - Keeping test performance fast
+ - Avoiding fragile tests
+
+(Lab, 60 mins)
+ - Use stubs and spies to unit test Backbone
+
+(Review/Discussion, 20 mins)
+ - What worked well, what didn't
+ - Q&A
+
+(Lab, 60 mins)
+ - Use a mock to test a feature that will use Backbone.model.fetch()
+ - Set up Sinon to fake XHR with dummy data
+ - Write fetch() code
+ - Test the test
+
+Day Two 
+-----
+
+(Review, 20 mins)
+
+(Code-along, 40 mins)
+ - Add Marionette to the stack
+ - Implement a test to demonstrate Marionette
+
+(Discussion, 30 mins)
+ - Higher level testing strategies
+
+(break)
+
+(Open time, 60 mins)
+ - Left open for students request topics
+ - Or review problem areas
+
+(lunch)
+
+(Discussion, 30 mins)
+ - Talk about practical examples
+ - Brainstorm strategies to catch up codebase
+
+(Lab, 60 mins)
+ - Work on practical examples
+
+(break)
+
+(Lab, 90 mins)
+ - Continue with practical examples
+
+(Wrap up, 30 mins)
