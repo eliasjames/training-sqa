@@ -1,0 +1,12 @@
+// Basic rules
+from a waiting state, when a floor is called, elevator should move towards it
+while moving, the elevator floor number should update
+while moving, elevator should listen to calls and accept stops in same direction
+as it passes each floor, elevator should check if it needs to stop
+when there are no more stops, return to waiting state
+
+// UX improvement
+if it reaches the top or bottom floor, the elevator should check for unanswered calls in the opposite direction
+
+// multiple elevators
+while moving, elevator should listen to calls cancelled
