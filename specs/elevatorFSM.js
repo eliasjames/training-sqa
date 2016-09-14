@@ -17,4 +17,9 @@ describe( 'efsm', function()  {
     efsm.move();
     expect( efsm.current ).not.toEqual( 'waiting' );
   });
+
+  it( 'should move in a direction', function()  {
+    efsm.move( 4 );
+    expect( efsm.currentDirection ).toEqual( 'up' );
+  });
 });
