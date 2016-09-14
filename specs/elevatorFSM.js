@@ -22,4 +22,10 @@ describe( 'efsm', function()  {
     efsm.move( 4 );
     expect( efsm.currentDirection ).toEqual( 'up' );
   });
+
+  it( 'should move in another direction', function()  {
+    efsm = elevatorFactory( 4 );
+    efsm.move( 3 );
+    expect( efsm.currentDirection ).toEqual( 'down' );
+  });
 });
