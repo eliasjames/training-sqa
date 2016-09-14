@@ -36,7 +36,7 @@ module.exports = function ( currentFloor ) {
             elevatorFSM.pass();
           }
         } else {
-          // throw new Error( 'entered moving without stopsQueue' );
+          throw new Error( 'entered moving without stopsQueue' );
         }
       },
       onenterpassing: function onEnterPassing ( e, from, to ) {

@@ -14,7 +14,7 @@ describe( 'efsm', function()  {
   });
 
   it( 'should move when called', function()  {
-    efsm.call();
+    efsm.call( 1 );
     expect( efsm.current ).not.toEqual( 'waiting' );
   });
 
@@ -33,5 +33,9 @@ describe( 'efsm', function()  {
     expect( efsm.currentFloor ).toBe( 0 );
     efsm.call( 3 );
     expect( efsm.currentFloor ).toBe( 3 );
+  });
+
+  it( 'should error on call without floor number', function()  {
+    expect( function () { efsm.call(); } ).toThrow();
   });
 });
