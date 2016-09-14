@@ -10,7 +10,7 @@ module.exports = function ( currentFloor ) {
       onbeforeevent: function( e, from, to ) {
         console.log( e, from, to );
       },
-      onmove: function( e, from, to, floor ) {
+      onleavewaiting: function( e, from, to, floor ) {
         if ( floor > currentFloor ) {
           elevatorFSM.currentDirection = 'up';
         }   
