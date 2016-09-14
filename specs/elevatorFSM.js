@@ -13,4 +13,8 @@ describe( 'efsm', function()  {
     expect( efsm.current ).toEqual( 'waiting' );
   });
 
+  it( 'should move when called', function()  {
+    efsm.move();
+    expect( efsm.current ).not.toEqual( 'waiting' );
+  });
 });
