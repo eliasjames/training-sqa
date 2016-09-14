@@ -14,18 +14,24 @@ describe( 'efsm', function()  {
   });
 
   it( 'should move when called', function()  {
-    efsm.move();
+    efsm.call();
     expect( efsm.current ).not.toEqual( 'waiting' );
   });
 
   it( 'should move in a direction', function()  {
-    efsm.move( 4 );
+    efsm.call( 4 );
     expect( efsm.currentDirection ).toEqual( 'up' );
   });
 
   it( 'should move in another direction', function()  {
     efsm = elevatorFactory( 4 );
-    efsm.move( 3 );
+    efsm.call( 3 );
     expect( efsm.currentDirection ).toEqual( 'down' );
+  });
+
+  it( 'should update floor number', function()  {
+    expect( efsm.currentFloor ).toBe( 0 );
+    efsm.call( 3 );
+    expect( efsm.currentFloor ).toBe( 3 );
   });
 });
