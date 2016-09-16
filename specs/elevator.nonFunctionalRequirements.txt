@@ -12,7 +12,7 @@ If used with a real elevator, failure could trap passengers. In that case, error
 If used as a mock, failure is unimportant.
 
 Minimum environment
-Code should be in a format that can run on client and server. 
+Elevator control should behave identically on both client and server.
 Client and server requirements should be typical for a web app.
 
 Maintainability

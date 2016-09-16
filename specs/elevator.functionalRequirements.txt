@@ -1,6 +1,6 @@
 Functional requirements
 
-respond to a hail for an elevator by direction
+respond to a hail by direction
 - input
   - direction
   - 'up' or 'down' 
@@ -15,7 +15,7 @@ respond to a hail for an elevator by direction
   - fails if elevator unavailable
   - fails if hail-by-floor is required
 
-respond to a hail for an elevator by destination floor 
+respond to a hail by destination floor
 - input 
   - number
   - represents floor the user desires

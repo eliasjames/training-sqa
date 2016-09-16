@@ -1,0 +1,17 @@
+Architectural requirements
+
+Components
+- Elevator control logic
+  - System is highly async. Use:
+    - promise pattern for method results
+    - pub/sub pattern for event management
+    - data streams for rapidly changing output
+- Web UI
+  - Simulated elements
+    - Floors (floors, doors, call buttons)
+    - Elevators (doors, floor entry interface)
+    - Elevator shafts (elevators travel between floors in shafts)
+    - Passengers?
+  - Initialization 
+    - Must know number of elevators and floors 
+    - Support rehydrating elevator system in-progress 
