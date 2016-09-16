@@ -99,5 +99,7 @@
     "browser"       : true, 
     "predef"        : [
       "module"
-    ]
+    ],
+    "browserify": true,
+    "jasmine": true
 }

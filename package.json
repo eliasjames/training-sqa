@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "Courseware for Intro to Test Driven Development",
   "main": "gulpfile.js",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "browserify": "^13.1.0",
     "gulp": "^3.9.1",
     "gulp-jshint": "^2.0.1",
+    "gulp-watch": "^4.3.9",
     "jasmine": "^2.5.1",
     "jshint": "^2.9.3",
     "jshint-stylish": "^2.2.1",
@@ -19,7 +19,7 @@
     "watchify": "^3.7.0"
   },
   "scripts": {
-    "test": "karma start --single-run"
+    "test": "gulp"
   },
   "keywords": [],
   "author": "Elias Carlston <elias@eliascarlston.com>",
