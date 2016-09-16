@@ -19,7 +19,7 @@
     "watchify": "^3.7.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "karma start --single-run"
   },
   "keywords": [],
   "author": "Elias Carlston <elias@eliascarlston.com>",
