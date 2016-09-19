@@ -15,7 +15,10 @@ module.exports = function () {
     },
     hailDown: function goingUp () {
       hail( 'down' );
-      return [config.ELEVATOR_CALLED];
+      eventHistory.push({
+        message: config.ELEVATOR_CALLED
+      });
+      return eventHistory;
     },
     acceptPassengers: function acceptPassengers( passengerCount ) {
       if ( passengerCount ) {
