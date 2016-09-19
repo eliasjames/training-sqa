@@ -18,8 +18,7 @@ gulp.task('watch-hint', function () {
 });
 gulp.task( 'test', function( done ) {
   var karmaConfig = {
-    configFile: __dirname + '/karma.conf.js',
-    singleRun: true
+    configFile: __dirname + '/karma.conf.js'
   };
   new karmaServer( karmaConfig, done ).start();
 });
