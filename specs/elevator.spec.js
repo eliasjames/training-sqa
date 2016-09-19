@@ -13,11 +13,7 @@ describe( 'elv', function() {
 
   it( 'should respond to a hail by direction', function() {
     var messageStream;
-    function callback( data ) {
-      return data.message; 
-    }
-
-    messageStream = elv.hailUp( callback );
+    messageStream = elv.hailUp();
     while ( !messageStream ) {
       // wait
     }
