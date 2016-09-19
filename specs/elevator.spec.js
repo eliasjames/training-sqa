@@ -19,7 +19,10 @@ describe( 'elv', function() {
     }
 
     message = elv.hailUp( callback );
-    while ( !message ) // wait
-    expect( message ).toEqual ( [config.ELEVATOR_CALLED] );
+    while ( !message ) {
+      // wait
+    }
+    // value comes from ../src/config.js
+    expect( message[0] ).toEqual ( 'Elevator called.' );
   });
 });
