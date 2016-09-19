@@ -2,7 +2,6 @@
 
 describe( 'elv', function() {
   var elevatorFactory = require( '../src/elevator.js' );
-  var config = require( '../src/config.js' );
   var elv;
 
   beforeEach( function() {
@@ -13,16 +12,16 @@ describe( 'elv', function() {
   });
 
   it( 'should respond to a hail by direction', function() {
-    var message;
+    var messageStream;
     function callback( data ) {
       return data.message; 
     }
 
-    message = elv.hailUp( callback );
-    while ( !message ) {
+    messageStream = elv.hailUp( callback );
+    while ( !messageStream ) {
       // wait
     }
     // value comes from ../src/config.js
-    expect( message[0] ).toEqual ( 'Elevator called.' );
+    expect( messageStream[1].message ).toEqual ( 'Elevator called.' );
   });
 });

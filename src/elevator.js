@@ -2,10 +2,16 @@
 
 module.exports = function () {
   var config = require('./config.js')();
+  var eventHistory = [{
+    message: config.ELEVATOR_STARTED
+  }];
   var elv = {
     hailUp: function goingUp () {
       hail( 'up' );
-      return [config.ELEVATOR_CALLED];
+      eventHistory.push({
+        message: config.ELEVATOR_CALLED
+      });
+      return eventHistory;
     },
     hailDown: function goingUp () {
       hail( 'down' );
