@@ -20,4 +20,13 @@ describe( 'elv', function() {
     // value comes from ../src/config.js
     expect( messageStream[1].message ).toEqual ( 'Elevator called.' );
   });
+  it( 'should respond to a hail the other direction', function() {
+    var messageStream;
+    messageStream = elv.hailDown();
+    while ( !messageStream ) {
+      // wait
+    }
+    // value comes from ../src/config.js
+    expect( messageStream[1].message ).toEqual ( 'Elevator called.' );
+  });
 });
