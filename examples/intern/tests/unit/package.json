@@ -1,0 +1,14 @@
+{
+  "name": "once-unit",
+  "version": "1.0.0",
+  "description": "Example for \"once\" function, demonstrating Sinon spies",
+  "main": "once.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Elias Carlston <elias@eliascarlston.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "sinon": "^1.17.6"
+  }
+}
