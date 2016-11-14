@@ -11,5 +11,8 @@
   "homepage": "http://theintern.io/",
   "devDependencies": {
     "intern": "^3.3.2"
+  }, 
+  "scripts": {
+    "postinstall": "cd tests/unit && npm install && cd ../../ && ./node_modules/.bin/intern-client config=tests/intern"
   }
 }
