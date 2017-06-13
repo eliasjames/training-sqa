@@ -1,3 +1,4 @@
+Software Quality Assurance and Testing
 Day One
 
 (Prerequisite)
@@ -11,113 +12,48 @@ Day One
  - Course material expectations
  - Review outline
 
-(Lecture, 20 mins)
-Core Concepts
-Why test?
- - Software Quality Assurance overview
- - No one method can catch all bugs
- - Tests one part of SQA: linting, code reviews, etc
- - Non-bug benefits of testing
- - Refactoring (SOLID, DRY)
-Definitions
- - BDD/TDD Overview
- - Unit Tests
- - Integration Tests
-Tests in practice
- - Tests have to get run often to be effective
- - Tools have to work well
- - Robustness
- - Choosing what to test...
- - and what not to
- - When to test (dev/staging/prod)
- - How to identify good tests
+Overview (lecture, 20 mins)
+- Why test? What testing can & can't do
+- Software Quality Assurance
+- Best practices for tests
 
-(Code-along, 30 mins)
-Setup
- - Brief review/intro to npm/package.json, if needed
- - Install Karma, Jasmine, Grunt, jshint
- - Set up Grunt to run jshint
-Jasmine 
- - Structure and Syntax
- - Suites & Specs
- - Matchers
- - Hello World failing test
- - Write Hello World code to make test pass
+Lab (10-20 mins)
+- Set up "Hello World" test locally
+- Intro or review basic syntax, as needed 
 
-(break)
+Lab (20 mins)
+- Examine example tests
+- Determine where best practices got missed
+- Rewrite test to improve
 
-(Discussion, 20 mins)
- - Review the use cases/features for our demo code
- - Outline a general plan for how to implement 
+Testing in practice (lecture, 20 mins)
+- Get maximum value from test suite
+- Writing tests first
+- Maintaining existing tests
 
-(Code-along, 60 mins)
- - Do TDD! Write tests then write code
- - Vanilla JS at this point
+Lab (60 mins)
+- Add tests to Tic Tac Toe to cover existing code
 
-(lunch)
+Lunch
 
-(Code-along, 60 mins)
- - Set up Karma 
- - Add Backbone
- - Split spec into multiple files
- - Set up Karma to test multiple browsers
- - E2E versus units with Backbone
+Lab (60 mins)
+- Write tests first for new Tic Tac Toe feature
+- Practice red/green cycle
 
-(break)
+Testing with Backbone (20 mins)
+- Best practices
+- Models
+- Views
+- Refactoring
 
-(Lecture, 20 mins)
-Advanced Jasmine: tools 
- - Stunt Doubles: Stubs, Spies, Mocks
- - Testing Asynchronous/Promises/Deferred Logic
- - Review other assertion libraries: mocha, chai, sinon
- - Mocking HTTP calls with Sinon
-Advanced Jasmine: techniques
- - Keeping test performance fast
- - Avoiding fragile tests
+Lab (60 mins)
+- Refactor Backbone Model & View
+- Write tests first for new feature
 
-(Lab, 60 mins)
- - Use stubs and spies to unit test Backbone
+Stubs, Spies and Mocks (lecture, 10 mins)
+- Best practices
+- When and when not to use
 
-(Review/Discussion, 20 mins)
- - What worked well, what didn't
- - Q&A
-
-(Lab, 60 mins)
- - Use a mock to test a feature that will use Backbone.model.fetch()
- - Set up Sinon to fake XHR with dummy data
- - Write fetch() code
- - Test the test
-
-Day Two 
------
-
-(Review, 20 mins)
-
-(Code-along, 40 mins)
- - Add Marionette to the stack
- - Implement a test to demonstrate Marionette
-
-(Discussion, 30 mins)
- - Higher level testing strategies
-
-(break)
-
-(Open time, 60 mins)
- - Left open for students request topics
- - Or review problem areas
-
-(lunch)
-
-(Discussion, 30 mins)
- - Talk about practical examples
- - Brainstorm strategies to catch up codebase
-
-(Lab, 60 mins)
- - Work on practical examples
-
-(break)
-
-(Lab, 90 mins)
- - Continue with practical examples
-
-(Wrap up, 30 mins)
+Lab (45 mins)
+- Convert live AJAX call to mock
+- Use a spy correctly
