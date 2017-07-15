@@ -1,8 +1,0 @@
-Passenger
-Call an elevator
- - indicate a direction and/or floor
- - elevator picks me up, drops off
-Building
-Know about elevators
- - current floor
- - current direction

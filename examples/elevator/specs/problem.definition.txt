@@ -1,4 +1,0 @@
-Model an elevator control system in a web app.
-
-App should have a client and server component so that state can persist and share among many clients.
-Client component should correspond to physical elevators: push a button, doors take time to open and close, etc. 
