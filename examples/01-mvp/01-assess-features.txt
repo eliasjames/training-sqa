@@ -1,0 +1,13 @@
+TicTacToe should...
+- accept valid moves
+-- input corresponds to cell target
+-- cell target is unplayed 
+-- give a message back
+- not accept invalid moves
+-- occupied cell
+-- invalid cell target
+-- incorrect player value (wrong turn)
+-- after game over
+-- give a message back
+- recognize winning moves
+-- give a message back
