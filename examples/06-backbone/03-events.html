@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Basic Views</title>
+  <meta name="description" content="Basic Backbone">
+  <meta name="author" content="Elias Carlston">
+
+  <script src="./node_modules/handlebars/dist/handlebars.js"></script>
+  <script src="./node_modules/jquery/dist/jquery.js"></script>
+  <script src="./node_modules/underscore/underscore.js"></script>
+  <script src="./node_modules/backbone/backbone.js"></script>
+  <script src="./03-events-model.js"></script>
+  <script src="./03-events-view.js"></script>
+	<script id="ordered-template" type="text/x-handlebars-template">
+		<ul class="one-order">
+			<li>
+				Start: {{ start }} 
+				<button class="change-start">Change</button>
+			</li>
+			<li>
+				End: {{ end }} 
+				<button class="change-end">Change</button>
+			</li>
+		</ul>
+	</script>
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <h1>Hapi</h1>
+  <p id="message-area">After page load, change myModel in console<br/></p>
+</body>
+</html>
