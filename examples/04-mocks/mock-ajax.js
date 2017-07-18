@@ -1,19 +1,14 @@
-describe( 'ajax', function() {
+function onBodyLoad() {
+  makeAjaxCall();
+}
+function makeAjaxCall() {
+  var myAjax = new XMLHttpRequest();
+  
+  myAjax.addEventListener( 'load', reqListener );
+  myAjax.open( 'GET', 'http://localhost:3000/respond-to-ajax' );
+  myAjax.send();
 
-  beforeEach(function() {
-    jasmine.Ajax.install();
-  });
-
-  afterEach(function() {
-    jasmine.Ajax.uninstall();
-  });
-
-  it( 'should not make a real ajax call', function() {
-    expect( 1 ).toEqual( 1 );
-    makeAjaxCall();
-    request = jasmine.Ajax.requests.mostRecent();
-    console.log( 'blerg', request );
-    request.respondWith({ "dummy": "data" });
-    expect(request.url).toBe('http://localhost:3000/respond-to-ajax');
-  });
-});
+}
+function reqListener() {
+  console.log( this.responseText );
+}

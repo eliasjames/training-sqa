@@ -15,8 +15,8 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'mock-ajax.js',
-      '04-mock-ajax.js'
+      'mock-ajax.spec.js',
+      'mock-ajax.js'
     ],
 
 
