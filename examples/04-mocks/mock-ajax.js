@@ -1,14 +1,30 @@
-function onBodyLoad() {
-  makeAjaxCall();
-}
-function makeAjaxCall() {
-  var myAjax = new XMLHttpRequest();
-  
-  myAjax.addEventListener( 'load', reqListener );
-  myAjax.open( 'GET', 'http://localhost:3000/respond-to-ajax' );
-  myAjax.send();
+function makeMockAjax( $ ) {
+  return {
+    getPlayerInfo( resolve, reject ) {
+      let url = '/players';
+      return this.doXHR( url, resolve, reject );
+    },
+    getPlayerRecord( playerNumber, resolve, reject ) {
+      // faking a RESTful API on the backend
+      // only playerNumber 1 is valid
+      let url = '/player/' + playerNumber + '/record';
+      return this.doXHR( url, resolve, reject );
+    },
+    getPlayersHighscore( resolve, reject ) {
+      let url = '/players/highscorer';
+      return this.doXHR( url, resolve, reject );
+    },
+    doXHR( url, resolve, reject, method ) {
+      url = 'http://localhost:8000' + url; 
+      method = method || 'GET';
 
-}
-function reqListener() {
-  console.log( this.responseText );
-}
+      return new Promise(( resolve, reject )=>{
+        $.ajax( url, {
+          method: method || 'GET',
+        })
+          .done( resolve )
+          .fail( reject );
+      });
+    }
+  }
+};
