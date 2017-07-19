@@ -1,5 +1,5 @@
 module.exports = 
-function() {
+function TicTacToe() {
   var returnObject = {
     currentPlayer: undefined,
     movePromptObj: {
