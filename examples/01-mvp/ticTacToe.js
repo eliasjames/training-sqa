@@ -69,6 +69,9 @@ function() {
       }
       return this.currentPlayer;
     },
+    getBoard: function() {
+      return this.moveStorage;
+    },
     getCurrentPlayer: function() {
       return ( this.getOrChangePlayer( false )) ? 
         { 
